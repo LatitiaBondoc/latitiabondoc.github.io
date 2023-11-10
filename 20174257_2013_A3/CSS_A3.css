@@ -1,0 +1,511 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* navbar */ 
+nav {
+    height:auto;
+    width: 100%;  
+    overflow: auto;
+    font-family: "Rubik Mono One";
+    text-align: center;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+}
+
+nav a {
+    float:left;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border: 0.4vw solid black; 
+    width: auto;
+    font-size:1.8vw;
+    letter-spacing: -3px;
+}
+
+.nalgorithm, .nlayer1, .nlayer2, .nlayer3 {
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.15vw;
+    width: 22%;
+}
+
+.info {
+    background-color: grey;
+    width:3%;
+}
+  
+
+.nalgorithm {
+    background-color: #00A23A;
+}
+
+.nlayer1 {
+    background-color: #0053A2;
+}
+  
+.nlayer2 {
+    background-color: #E40428;
+}
+
+.nlayer3 {
+    background-color: #FFE100;
+
+}
+
+.ntimer {
+    background-color: #EF7D00;
+    width:3%;
+
+} 
+
+/* SHOELACE tooltip  */
+
+#infoSection {
+    width:100%;
+    height:900px;
+    position: relative;
+}
+
+#imgInfo {
+    transform: translate(-50%,0);
+    left: 50%;
+    width: 30%;
+    position: absolute;
+    margin-top: 200px;
+}
+
+.factpos {
+    position: absolute;
+    margin-top: 550px;
+    width: 00.1em;;
+}
+
+.fact, .fact2 {
+    left: 75%;
+}
+
+.fact3, .fact4 {
+    right: 75%;
+}
+
+.fact2, .fact4 {
+    margin-top: 300px;
+}
+
+#icon {
+    transform: translate(-50%,0);
+    font-size:5vw;
+}
+
+svg {
+    background-color: #ffffff;
+    animation: bounce 3s infinite; 
+}
+
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0); 
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+/* algorithm Section */
+
+.cards {
+    display:flex;
+    width: fit-content;
+}
+
+.carousel {
+    position: relative;
+}
+
+.algSect {
+    border-top: #00A23A solid 15px;
+    position: relative;
+    background-color: #C5DDA6;
+    height: 650px;
+    border-radius: 0px 0px 43px 43px;
+}
+
+h1 {
+    -webkit-text-stroke: black 3.5px;
+    font-family: "Rubik Mono One";
+    font-size: 4.5vw;
+    text-align: center;
+    letter-spacing: -8px;
+}
+
+#algHead {
+    color: rgb(0, 136, 0);
+}
+
+/* shoelace card */
+.fLeft, .fRight, .bLeft, .bRight {
+    float:left;
+    margin-left: 100px;
+    border: solid black 7px;
+    border-radius: 47px 47px 0px 0px;
+    --border-radius: 40px 40px 0px 0px;
+    color: green;
+}
+
+#f0, #f1, #b0, #b1 {
+    margin: 50px;
+    padding: 50px;
+    border: black 6px solid;
+    background-color: F9FFF1;
+}
+
+.squareF, .squareB {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+}
+
+.squareFLeft, .squareFRight, .squareBLeft, .squareBRight {
+    width: 100px;
+    height: 100px;
+    background-color: #0CB1C4;
+    animation-duration: 9000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+.squareB {
+    margin-top: -100px;
+    position: absolute;
+}
+
+.squareFLeft, .squareBLeft {
+    animation-name:spinCounterClockwise;
+}
+
+.squareFRight, .squareBRight {
+    animation-name:spinClockwise;
+}
+  
+@keyframes spinClockwise {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes spinCounterClockwise {
+    from {
+        transform:rotate(360deg);
+    }
+    to {
+        transform:rotate(0deg);
+    }
+}
+
+.d  {
+    float:left;
+    margin-left: 100px;
+    width: 350px;
+    height: 453px;
+    border: solid black 7px;
+    border-radius: 47px 47px 0px 0px;
+    --border-radius: 40px 40px 0px 0px;
+}
+
+.cardAlgImg {
+    height: 250px;
+    margin-top: 50px;
+}
+
+#d, #d1 {
+    transform: rotate(180deg);
+}
+
+#l, #l1 {
+    transform: rotate(270deg);
+}
+
+#r, #r1 {
+    transform: rotate(90deg);
+}
+
+
+h2 {
+    text-align: center;
+    font-family: "Rubik Mono One";
+    font-size: 75px;
+    margin: 0px;
+    color: white;
+    -webkit-text-stroke: black 3.5px;
+}
+
+/* Layer 1 Section */
+.Layer1Section {
+    position: relative;
+    border-top: #0053A2 solid 15px;
+    height:750px;
+    background-color: white;
+    padding: 50px;
+}
+
+#layHead {
+    color: white;
+}
+
+.layer1card {
+    height: 650px;
+    width: 30%;
+    border: 7px black solid;
+    background-color: #0053A2;
+    position: absolute;
+    float: left;
+}
+
+#lay1 {
+    border: rgb(255, 255, 255) 8px solid;
+    background-color: rgba(255, 255, 255, 0.716);
+    max-height:300px;
+    width:auto;
+    padding:30px;
+    position: relative;
+    transform: translate(-50%,0);
+    left:50%;
+}
+
+
+#layer1content {
+    border: solid black 4px;
+    font-size: 20px;
+    font-family: 'Rubik Mono Two';
+    text-align: justify;
+    padding: 50px;
+    background-color: white;
+    width: 100%;
+}
+
+#sl-carousel {
+    margin-left: 100px;
+    border: black solid 8px;
+    padding: auto;
+    width: 60%;
+    height: 700px;
+    float: right;
+    position: relative;
+    background-color: #0053A2;
+}
+
+#l11 {
+    width: 100px;
+}
+
+
+
+/* Layer 2 */
+
+.Layer2Section {
+    position: relative;
+    border-top: #E40428 solid 15px;
+    background-color: white;
+    height: 700px;
+}
+
+#lay2 {
+    border: rgb(255, 255, 255) 8px solid;
+    background-color: rgba(255, 255, 255, 0.716);
+    max-height:300px;
+    width:auto;
+    padding:30px;
+    position: relative;
+    transform: translate(-50%,0); left:50%;
+}
+
+.layer2head {
+    padding: 30px;
+    width: 28%;
+    border-right: 7px black solid;
+    background-color: #E40428;
+    position: absolute;
+    float: left;
+    height: 700px;
+}
+
+.gifcontainer {
+    display: flex;
+    height: 760px;
+    float:right;
+    width: 69%;
+    background-color: white;
+}
+
+.split {
+    width: 49.6%;
+    text-align: center;
+}
+
+.left {
+    float:left;
+    border-right: black solid 10px;
+}
+
+.right {
+    float:right;
+}
+
+#box {
+    border: 10px solid black;
+}
+
+#gif {
+    margin:50px;
+    padding: 4vw;
+    background-color:rgba(245, 109, 109, 0.888);
+    border-radius: 50px;
+    height: 30vw;
+
+}
+
+/* Layer3 */
+
+h3 {
+    font-size: 2vw;
+    font-family:'Rubik Mono One';
+}
+
+.carouselLayer3 {
+    background-color:#0053A2;
+}
+
+.Layer3Section {
+    padding: 50px;
+    position: relative;
+    border-top: #FFE100 solid 15px;
+    height:750px;
+    background-color: white;
+}
+
+#layHead {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.layer3card {
+    margin-top: 50px;
+    border: black 10px solid;
+    height: 31vw;
+    width: 30%;
+    background-color: #FFE100;
+    position: absolute;
+    float: left;
+}
+
+#lay3 {
+    border: rgb(255, 255, 255) 8px solid;
+    background-color: rgba(255, 255, 255, 0.716);
+    max-height:300px;
+    width:15vw;
+    padding:30px;
+    position: relative;
+    transform: translate(-50%,0);
+    left:50%;
+}
+
+#sl-carousel3 {
+    padding: 100px;
+    margin-top: -65px;
+    margin-left: 100px;
+    border-radius: 0px 0px 5% 5%;
+    width: 60%;
+    float: right;
+    border: black 10px solid;
+    background-color:#FFE100;
+    --aspect-ratio: 1/1;
+    height: 790px;
+}
+
+@media only screen and (max-width: 900px) {
+    nav a {
+        -webkit-text-stroke-width: 0.1px;
+        font-size: 15px;
+        border: none;
+    }
+
+    #imgInfo {
+        margin-top: 330px;
+    }
+
+    #infoSection {
+        margin-top: -200px;
+        height: 650px;
+    }
+
+    /*alg */ 
+    #algHead {
+        font-size: 50px;
+    }
+    .algSect {
+        height: 500px;
+    }
+
+    .cards {
+        transform:scale(0.5)
+    }
+    /*lay1 */
+    .Layer1Section {
+        height: 500px;
+
+    }
+    .layer1card, .layer2head, .layer3card {
+        display: none;
+        position:absolute;
+    }
+
+    #sl-carousel, #sl-carousel3 {
+        position: absolute;
+        margin: 20px;
+        padding: 20px;
+        width: 140%;
+        height: 500px;
+        transform: translate(-50%,0); left:50%;
+
+    }
+
+    /* layer 2 */
+
+    .Layer2Section {
+        height: 1150px;
+    }
+
+    .split {
+        position:absolute;
+        display: flex;
+        width: 100%;
+        transform: translate(-50%,0); left:50%;
+    }
+
+    .left {
+        margin-left: 70px;
+        margin-top: 550px;
+        border: none;
+    }
+
+    #gif {
+        height: 500px;
+    }
+
+    .Layer3Section {
+        height: 500px;
+    }
+
+}
+
+
+
+
