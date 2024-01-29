@@ -1,1 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="utf-B">
+    <meta name="viewport" content="width=device-with, inital-scale=1.0">
+    <title> Rubik's Education </title>
+    <link rel="stylesheet" type="text/css" href="CSS_A3.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik Mono One" rel="stylesheet">
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.11.2/cdn/shoelace.js"></script>
+    <!-- shoelace UI card-->
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.11.2/cdn/themes/light.css" />
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.11.2/cdn/shoelace-autoloader.js"></script>
+
+    <script src='https://kit.fontawesome.com/088039d0fa.js' crossorigin='anonymous'></script>
+    <!-- shoelace recommended icons-->
+
+</head>
+
+<nav>
+    <a class="info" href="#infoSection"><i class="fa-solid fa-book"></i> </a>
+    <a class="nalgorithm" href="#algSectNav"> Algorithm </a>
+    <a class="nlayer1" href="#lay1sect"> Layer 1</a>
+    <a class="nlayer2" href="#lay2sect"> Layer 2</a>
+    <a class="nlayer3" href="#lay3sect"> Layer 3 </a>
+    <a class="ntimer" href="#timer"><i class="far fa-clock"></i> </a>
+</nav>
+
+<body>
+    <section id="infoSection">
+        <img id="imgInfo" src="/images/info_image.png" alt="info_image"> </img>
+
+        <div class="info" ref=" layer1">
+            <sl-tooltip class="fact" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nisl orci, suscipit vitae consequat quis, interdum vitae lectus. Aenean mollis, lorem eget vestibulum posuere, massa arcu semper justo, ut tempus sem libero ut velit." trigger="click">
+                <sl-button class="fact factpos">
+                    <svg id="icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path d="M234.5 5.7c13.9-5 29.1-5 43.1 0l192 68.6C495 83.4 512 107.5 512 134.6V377.4c0 27-17 51.2-42.5 60.3l-192 68.6c-13.9 5-29.1 5-43.1 0l-192-68.6C17 428.6 0 404.5 0 377.4V134.6c0-27 17-51.2 42.5-60.3l192-68.6zM256 66L82.3 128 256 190l173.7-62L256 66zm32 368.6l160-57.1v-188L288 246.6v188z" />
+                     </svg>
+                </sl-button>
+            </sl-tooltip>
+
+            <sl-tooltip class="fact" content="Phasellus viverra pharetra auctor. Praesent fermentum elementum dictum. Mauris ut pharetra massa. Etiam varius quis ex id ultricies. Suspendisse aliquam tempus porta. Nulla pellentesque eu erat a auctor. Curabitur varius augue dolor, a condimentum sapien blandit id." trigger="click">
+                <sl-button class="fact2 factpos">
+                    <svg id="icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path d="M234.5 5.7c13.9-5 29.1-5 43.1 0l192 68.6C495 83.4 512 107.5 512 134.6V377.4c0 27-17 51.2-42.5 60.3l-192 68.6c-13.9 5-29.1 5-43.1 0l-192-68.6C17 428.6 0 404.5 0 377.4V134.6c0-27 17-51.2 42.5-60.3l192-68.6zM256 66L82.3 128 256 190l173.7-62L256 66zm32 368.6l160-57.1v-188L288 246.6v188z" />
+                     </svg>
+                </sl-button>
+            </sl-tooltip>
+
+            <sl-tooltip class="fact" content="Vestibulum at nibh in est dapibus tempor. Ut rutrum, sapien nec bibendum dictum, odio justo ornare mauris, eu efficitur magna turpis ut arcu. Donec sed fringilla nulla. Maecenas vel justo ante. Proin malesuada efficitur porta. Suspendisse sapien nunc, ultricies eget tortor et, accumsan efficitur nisl. " trigger="click">
+                <sl-button class="fact3 factpos">
+                    <svg id="icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path d="M234.5 5.7c13.9-5 29.1-5 43.1 0l192 68.6C495 83.4 512 107.5 512 134.6V377.4c0 27-17 51.2-42.5 60.3l-192 68.6c-13.9 5-29.1 5-43.1 0l-192-68.6C17 428.6 0 404.5 0 377.4V134.6c0-27 17-51.2 42.5-60.3l192-68.6zM256 66L82.3 128 256 190l173.7-62L256 66zm32 368.6l160-57.1v-188L288 246.6v188z" />
+                     </svg>
+                </sl-button>
+            </sl-tooltip>
+
+            <sl-tooltip class="fact" content="Mauris sagittis tortor eu enim tempus iaculis. Mauris sagittis sapien id nulla mollis sodales. Integer volutpat, quam ac imperdiet varius, odio erat hendrerit nisi, ut scelerisque urna quam sit amet urna. Suspendisse porta nec mauris vel volutpat. Etiam luctus leo a mollis suscipit." trigger="click">
+                <sl-button class="fact4 factpos">
+                    <svg id="icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path d="M234.5 5.7c13.9-5 29.1-5 43.1 0l192 68.6C495 83.4 512 107.5 512 134.6V377.4c0 27-17 51.2-42.5 60.3l-192 68.6c-13.9 5-29.1 5-43.1 0l-192-68.6C17 428.6 0 404.5 0 377.4V134.6c0-27 17-51.2 42.5-60.3l192-68.6zM256 66L82.3 128 256 190l173.7-62L256 66zm32 368.6l160-57.1v-188L288 246.6v188z" />
+                     </svg>
+                </sl-button>
+            </sl-tooltip>      
+        </div>
+    </section>
+
+    <section class="algSect" id="algSectNav">
+        <h1 id="algHead"> Algorithms </h1>
+
+        <div class="carousel">
+            <div class="cards">
+                <sl-card id ="scroll" class="fLeft">
+                    <div id = "f0">
+                        <div class = "squareF" >
+                            <div class = "squareFLeft" ></div>
+                        </div>
+                    </div>
+                    <h2> F' </h2>
+                  </sl-card>
+
+                  <sl-card id ="scroll" class="fRight">
+                    <div id = "f1">
+                        <div class = "squareF" >
+                            <div class = "squareFRight" ></div>
+                        </div>
+                    </div>
+                    <h2> F </h2>
+                  </sl-card>
+
+                  <sl-card id ="scroll" class="bRight">
+                    <div id = "b0">
+                        <div class = "squareBLeft " > </div>
+                        <div class = "squareB " ></div>
+                    </div>
+                    <h2> B </h2>
+                  </sl-card>
+
+                  <sl-card id ="scroll" class="bLeft">
+                    <div id = "b1">
+                        <div class = "squareBRight" ></div>
+                        <div class = "squareB" ></div>
+                    </div>
+                    <h2> B' </h2>
+                  </sl-card>
+
+                <sl-card id="scroll" class="d square">
+                    <img class = "cardAlgImg" id="u" src="/images/U D L R.png" alt="D" />
+                    <h2> U </h2>
+                </sl-card>
+
+                <sl-card id="scroll" class="d square">
+                    <img class = "cardAlgImg" id="u1" src="/images/U' D' L' R'.png" alt="D1" />
+                    <h2> U' </h2>
+                </sl-card>
+                
+                <sl-card id="scroll" class="d square">
+                    <img class = "cardAlgImg" id="d" src="/images/U D L R.png" alt="D" />
+                    <h2> D </h2>
+                </sl-card>
+
+                <sl-card id="scroll" class="d square">
+                    <img class = "cardAlgImg" id="d1" src="/images/U' D' L' R'.png" alt="D1" />
+                    <h2> D' </h2>
+                </sl-card>
+
+                <sl-card id="scroll" class="d square">
+                    <img class = "cardAlgImg" id="l" src="/images/U D L R.png" alt="D1" />
+                    <h2> L </h2>
+                </sl-card>
+
+                <sl-card id="scroll" class="d square">
+                    <img class = "cardAlgImg" id="l1" src="/images/U' D' L' R'.png" alt="D" />
+                    <h2> L' </h2>
+                </sl-card>
+
+                <sl-card id="scroll" class="d square">
+                    <img class = "cardAlgImg" id="r" src="/images/U D L R.png" alt="D1" />
+                    <h2> R </h2>
+                </sl-card>
+
+                <sl-card id="scroll" class="d square">
+                    <img class = "cardAlgImg" id="r1" src="/images/U' D' L' R'.png" alt="D" />
+                    <h2> R' </h2>
+                </sl-card>
+            </div>
+        </div>
+    </section>
+
+    <section class="Layer1Section" id = "lay1sect">
+        <div class="layer1card">
+            <h1 id="layHead"> Layer 1 </h1>
+            <img id="lay1" src="/images/layer1img.png" alt="layer1Image">
+        </div>
+
+        <div class="carouselLayer1">
+            <sl-carousel loop navigation pagination id ="sl-carousel">
+                <sl-carousel-item id="layer1content">
+                    <img class = "layer1photos" id="l11" src="/images/L1/L1_0.png" alt="layer1TitleImage">
+                </sl-carousel-item>
+                <sl-carousel-item id="layer1content">
+                    <img class = "layer1photos" id="l12" src="/images/L1/L1_1.png" alt="layer1TitleImage">
+                </sl-carousel-item>
+                <sl-carousel-item id="layer1content">
+                    <img class = "layer1photos" id="l13" src="/images/L1/L1_2.png" alt="layer1TitleImage">
+                </sl-carousel-item>
+                <sl-carousel-item id="layer1content">
+                    <img class = "layer1photos" id="l14" src="/images/L1/L1_3.png" alt="layer1TitleImage">
+                </sl-carousel-item>
+                <sl-carousel-item id="layer1content">
+                    <img class = "layer1photos" id="l15" src="/images/L1/L1_4.png" alt="layer1TitleImage">
+                </sl-carousel-item>
+                <sl-carousel-item id="layer1content">
+                    <img class = "layer1photos" id="l16" src="/images/L1/L1_5.png" alt="layer1TitleImage">
+                </sl-carousel-item>
+                <sl-carousel-item id="layer1content">
+                    <img class = "layer1photos" id="l17" src="/images/L1/L1_6.png" alt="layer1TitleImage">
+                </sl-carousel-item>
+                <sl-carousel-item id="layer1content">
+                    <img class = "layer1photos" id="l18" src="/images/L1/L1_7.png" alt="layer1TitleImage">
+                </sl-carousel-item>
+                <sl-carousel-item id="layer1content">
+                    <img class = "layer1photos" id="l19" src="/images/L1/L1_8.png" alt="layer1TitleImage">
+                </sl-carousel-item>
+                <sl-carousel-item id="layer1content">
+                    <img class = "layer1photos" id="l110" src="/images/L1/L1_9.png" alt="layer1TitleImage">
+                </sl-carousel-item>
+                <sl-carousel-item id="layer1content">
+                    <img class = "layer1photos" id="l111" src="/images/L1/L1_10.png" alt="layer1TitleImage">
+                </sl-carousel-item>
+                <sl-carousel-item id="layer1content">
+                    <img class = "layer1photos" id="l113" src="/images/L1/L1_11.png" alt="layer1TitleImage">
+                </sl-carousel-item>
+                <sl-carousel-item id="layer1content">
+                    <img class = "layer1photos" id="l114" src="/images/L1/L1_12.png" alt="layer1TitleImage">
+                </sl-carousel-item>
+                <sl-carousel-item id="layer3content">
+                    <h3>ALL content within these slides were taken from the Original Rubik's Cube Guide.
+                    Click <a class = "layerReference" href="https://assets.ctfassets.net/r3qu44etwf9a/6kAQCoLmbXXu29TTuArrk1/404118e1f9bfb6f9997157a284bbc572/Rubiks_Solution-Guide_3x3.pdf"> here</a> for more information! </h3>
+                </sl-carousel-item>
+            </sl-carousel>
+        </div>
+    </section>
+
+    <section class="Layer2Section" id = "lay2sect">
+        <div class="layer2head">
+            <h1 id="layHead"> Layer 2 </h1>
+            <img id="lay2" src="/images/layer2img.png" alt="layer2Image">
+        </div>
+
+        <div class = "gifcontainer">
+            <div class = "split left">
+                <sl-animated-image id="gif" src="/images/gifLayer2Left.GIF" alt="gif1"> 
+            </div>
+
+            <div class = "split right">
+                <sl-animated-image id="gif" src="/images/gifLayer2.GIF" alt="gif1">
+        </div>
+    </section>
+
+    <section>
+        <section class="Layer3Section" id = "lay3sect">
+            <div class="layer3card">
+                <h1 id="layHead"> Layer 3 </h1>
+                <img id="lay3" src="/images/layer3img.png" alt="layer3Image">
+            </div>
+    
+            <div class="carouselLayer3">
+                <sl-carousel loop navigation pagination id = "sl-carousel3">
+                    <sl-carousel-item id="layer3content">
+                        <img class = "layer3photos" id="l31" src="/images/L3/L3_1.png" alt="layer1TitleImage">
+                    </sl-carousel-item>
+                    <sl-carousel-item id="layer3content">
+                        <img class = "layer3photos" id="l32" src="/images/L3/L3_2.png" alt="layer1TitleImage">
+                    </sl-carousel-item>
+                    <sl-carousel-item id="layer3content">
+                        <img class = "layer3photos" id="l33" src="/images/L3/L3_3.png" alt="layer1TitleImage">
+                    </sl-carousel-item>
+                    <sl-carousel-item id="layer3content">
+                        <img class = "layer3photos" id="l34" src="/images/L3/L3_4.png" alt="layer1TitleImage">
+                    </sl-carousel-item>
+                    <sl-carousel-item id="layer3content">
+                        <img class = "layer3photos" id="l35" src="/images/L3/L3_5.png" alt="layer1TitleImage">
+                    </sl-carousel-item>
+                    <sl-carousel-item id="layer3content">
+                        <img class = "layer3photos" id="l36" src="/images/L3/L3_6.png" alt="layer1TitleImage">
+                    </sl-carousel-item>
+                    <sl-carousel-item id="layer3content">
+                        <img class = "layer3photos" id="l37" src="/images/L3/L3_7.png" alt="layer1TitleImage">
+                    </sl-carousel-item>
+                    <sl-carousel-item id="layer3content">
+                        <img class = "layer3photos" id="l38" src="/images/L3/L3_8.png" alt="layer1TitleImage">
+                    </sl-carousel-item>
+                    <sl-carousel-item id="layer3content">
+                            <h3>ALL content within these slides were taken from the Original Rubik's Cube Guide.
+                            Click <a class = "layerReference" href="https://assets.ctfassets.net/r3qu44etwf9a/6kAQCoLmbXXu29TTuArrk1/404118e1f9bfb6f9997157a284bbc572/Rubiks_Solution-Guide_3x3.pdf"> here</a> for more information! </h3>
+                    </sl-carousel-item>
+                    
+            </div>
+        </section>
+
+    </section>
+
+
+
+    <!-- scroll GSAP import-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script> <!-- GSAP import-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- main.js -->
+    <script src="JavaScript_A3.js"></script>
+
+</body>
+
+</html>
